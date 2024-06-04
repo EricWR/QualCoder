@@ -3730,11 +3730,11 @@ class DialogCodeText(QtWidgets.QWidget):
         undo_list = []
         try:
             for f in files:
-                sentences = f['fulltext'].split(ending)
+                sentences = f['fulltext'].lower().split(ending)
                 pos0 = 0
                 codes_added = 0
                 for sentence in sentences:
-                    if text_ in sentence:
+                    if text_.lower() in sentence:
                         i = {'cid': cid, 'fid': int(f['id']), 'seltext': str(sentence),
                             'pos0': pos0, 'pos1': pos0 + len(sentence),
                             'owner': self.app.settings['codername'], 'memo': "",
