@@ -1,3 +1,7 @@
+I made some modifications for using this with my dissertation. Everything below is from the original project and not mine. Any changes I make can be considered as relicensed under MIT.
+
+--------------------------------------------------------------------------------------------------------------------------
+
 <img src="https://github.com/ccbogel/QualCoder/blob/master/qualcoder.png" width=200 height=200>
 
 # QualCoder
