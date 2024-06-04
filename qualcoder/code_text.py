@@ -3833,7 +3833,7 @@ class DialogCodeText(QtWidgets.QWidget):
                     # Rare but possible no result is returned, hence if statement
                     if current_file is not None:
                         text_ = current_file[2]
-                        text_starts = [match.start() for match in re.finditer(re.escape(txt), text_)]
+                        text_starts = [match.start() for match in re.finditer(re.escape(txt), text_, flags=re.I)]
                         # Trim to first or last instance if option selected
                         if self.all_first_last == "first" and len(text_starts) > 1:
                             text_starts = [text_starts[0]]
